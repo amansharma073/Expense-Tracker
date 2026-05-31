@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="big-container">
+            <div class="top-heading">
+        <div class="head1">
+            <i class="fa-solid fa-wallet"></i>
+            <h3>Expense Tracker</h3>
+        </div>
+         <!-- icon -->
+     </div>
+     <div class="yourBalance">
+        <p >Your Balance</p>
+        <h4 id="your-balance">$5000.00</h4>
+        <i class="fa-solid fa-wallet"></i>
+     </div>
+     <div class="total">
+        <div class="income">
+            <div class="icon">
+                <div class="ic">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+            </div>
+            <div class="info">
+                <p>Total Income</p>
+                <p id="income-balance">$8000.00</p>
+            </div>
+        </div>
+        <div class="expense">
+            <div class="icon">
+                <div class="ic">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="info">
+                 <p>Total Expense</p>
+                <p id="expense-balance">$2550.00</p>
+            </div>
+        </div>
+     </div>
+     <div class="history-info">
+        <div class="head-info">
+            <p>Transaction History</p>
+        </div>
+        <div class="history-info2">
+            <!-- Directly added from js -->
+        </div>
+     </div>
+     <div class="new-Transaction">
+        <div class="head-tran">
+            <p>Add New Transaction</p>
+
+        </div>
+        <div class="transaction-details">
+            <input  id="description" type="text" placeholder="$ Enter description (e.g. Food, Salary)">
+        </div>
+        <div class="transaction-amount">
+            <input  id="amount" type="number" placeholder="$ Enter amount">
+            <Select id="type">
+                <option value="Expense"> Expense</option>
+                <option value="Income"> Income</option>
+            </Select>
+        </div>
+        <button id="add-btn">
+            <i class="fa-solid fa-plus"></i>
+            Add Transaction
+        </button>
+     </div>
+      <div class="footer">
+        <p>@ 2024 Expense Tracker. All rights reserved.</p>
+      </div>
+        </div>
+     
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
